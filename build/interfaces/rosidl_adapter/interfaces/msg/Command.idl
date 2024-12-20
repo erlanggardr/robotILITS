@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interfaces/msg/Command.msg
+// generated code does not contain a copyright notice
+
+
+module interfaces {
+  module msg {
+    struct Command {
+      int32 x;
+
+      int32 y;
+
+      int32 yaw;
+
+      int32 depth;
+    };
+  };
+};

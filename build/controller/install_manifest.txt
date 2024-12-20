@@ -1,0 +1,15 @@
+/home/erzy/robotILITS/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+/home/erzy/robotILITS/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+/home/erzy/robotILITS/install/controller/share/controller/environment/ament_prefix_path.sh
+/home/erzy/robotILITS/install/controller/share/controller/environment/ament_prefix_path.dsv
+/home/erzy/robotILITS/install/controller/share/controller/environment/path.sh
+/home/erzy/robotILITS/install/controller/share/controller/environment/path.dsv
+/home/erzy/robotILITS/install/controller/share/controller/local_setup.bash
+/home/erzy/robotILITS/install/controller/share/controller/local_setup.sh
+/home/erzy/robotILITS/install/controller/share/controller/local_setup.zsh
+/home/erzy/robotILITS/install/controller/share/controller/local_setup.dsv
+/home/erzy/robotILITS/install/controller/share/controller/package.dsv
+/home/erzy/robotILITS/install/controller/share/ament_index/resource_index/packages/controller
+/home/erzy/robotILITS/install/controller/share/controller/cmake/controllerConfig.cmake
+/home/erzy/robotILITS/install/controller/share/controller/cmake/controllerConfig-version.cmake
+/home/erzy/robotILITS/install/controller/share/controller/package.xml
