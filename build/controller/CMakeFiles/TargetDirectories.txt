@@ -1,9 +1,0 @@
-/home/erzy/robotILITS/build/controller/CMakeFiles/uninstall.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/controller_uninstall.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/test.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/edit_cache.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/rebuild_cache.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/list_install_components.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/install.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/install/local.dir
-/home/erzy/robotILITS/build/controller/CMakeFiles/install/strip.dir
