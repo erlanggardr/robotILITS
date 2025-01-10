@@ -13,6 +13,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Command.msg"
   "msg/ObjectCommand.msg"  
+  DEPENDENCIES std_msgs
 )
 
 if(BUILD_TESTING)
@@ -27,10 +28,10 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-# Install the message headers
-install(DIRECTORY include/
-  DESTINATION include/${PROJECT_NAME}
-)
+# # Install the message headers
+# install(DIRECTORY include/
+#   DESTINATION include/${PROJECT_NAME}
+# )
 
 
 ament_package()
