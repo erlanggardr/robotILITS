@@ -28,8 +28,16 @@
                <box size="${collision_x} ${collision_y} ${collision_z}" />
             </geometry>
          </collision>
-         <xacro:inertal_box m="${frame_mass}" x="${frame_x}" y="${frame_y}" z="${frame_z}" />
+         <xacro:inertal_box m="${frame_mass}" x="${collision_x}" y="${collision_y}"
+            z="${collision_z}" />
       </visual>
    </link>
+
+   <joint name="base_link_frame_joint" type="fixed">
+      <parent link="parent_link" />
+      <child link="child_link" />
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+   </joint>
+
 
 </robot>
