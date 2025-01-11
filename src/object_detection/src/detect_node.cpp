@@ -19,7 +19,7 @@ class ObjectDetectionNode : public rclcpp::Node {
       image_publisher_ = this->create_publisher<sensor_msgs::msg::Image>("/objects_box", 10);
       objects_publisher_ = this->create_publisher<interfaces::msg::ObjectCommand>("/objects", 10);
 
-      Config config = {0.4f, 0.4f, 0.4f, 640, 640, "src/object_detection/models/yolov5l.onnx"};
+      Config config = {0.4f, 0.4f, 0.4f, 640, 640, "src/object_detection/models/yolov5m.onnx"};
       yolomodel_ = std::make_shared<YOLOV5>(config);
 
       timer_ = this->create_wall_timer(std::chrono::milliseconds(300), std::bind(&ObjectDetectionNode::timer_callback, this));
