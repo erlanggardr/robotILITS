@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(serialcom)
+project(stm32-comm)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,9 +7,18 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(Boost REQUIRED COMPONENTS thread system)
+
+add_executable(stm_comm src/ros-stm.cpp)
+ament_target_dependencies(stm_comm rclcpp interfaces std_msgs Boost)
+
+install(TARGETS
+  stm_comm
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

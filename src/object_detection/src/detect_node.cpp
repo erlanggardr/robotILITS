@@ -22,7 +22,7 @@ class ObjectDetectionNode : public rclcpp::Node {
       Config config = {0.4f, 0.4f, 0.4f, 640, 640, "src/object_detection/models/yolov5l.onnx"};
       yolomodel_ = std::make_shared<YOLOV5>(config);
 
-      timer_ = this->create_wall_timer(std::chrono::milliseconds(30), std::bind(&ObjectDetectionNode::timer_callback, this));
+      timer_ = this->create_wall_timer(std::chrono::milliseconds(300), std::bind(&ObjectDetectionNode::timer_callback, this));
 
       RCLCPP_INFO(this->get_logger(), "Object Detection Node Initialized");
    }
@@ -30,7 +30,7 @@ class ObjectDetectionNode : public rclcpp::Node {
  private:
    void timer_callback() {
       cv::Mat frame;
-      cap_ >> frame;
+      cap_.read(frame);
 
       if (frame.empty()) {
          RCLCPP_ERROR(this->get_logger(), "Captured empty frame");
